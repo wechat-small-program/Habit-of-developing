@@ -1,0 +1,53 @@
+{
+
+  "pages": [
+    "pages/loginer/loginer",
+    "pages/punch/punch",
+    "pages/mine/mine",
+    "pages/more/more",
+    "pages/about/about",
+    "pages/advise/advise",
+    "pages/ranking/ranking",
+    "pages/test/test"
+
+  ],
+    
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "早安",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FAFAFA",
+    "borderStyle": "white",
+    "color": "#b2b2b2",
+    "selectedColor": "#ffcc00",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "selectedIconPath": "static/images/school1.png",
+        "iconPath": "static/images/school.png",
+        "text": "早起打卡"
+      },
+      {
+        "pagePath": "pages/punch/punch",
+        "selectedIconPath": "static/images/punch1.png",
+        "iconPath": "static/images/punch.png",
+        "text": "早起打卡"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "selectedIconPath": "static/images/send1.png",
+        "iconPath": "static/images/send.png",
+        "text": "打卡榜"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "selectedIconPath": "static/images/mine1.png",
+        "iconPath": "static/images/mine.png",
+        "text": "我"
+      }
+    ]
+  }
+}

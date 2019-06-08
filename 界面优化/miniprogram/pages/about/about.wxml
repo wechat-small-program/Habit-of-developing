@@ -1,0 +1,10 @@
+<view class="topBox">
+  <image src="../../static/images/csu.jpg" mode="aspectFill"></image>
+  <text>早安~</text>
+</view>
+  <view class="softHtp">
+    该程序目的在于帮助用户养成早起的习惯,每天打卡4点开始认为是第二天，4:00-6:00打卡加6分，6:00-8:00打卡加4分，8:00-10:00打卡加2分，其余时间禁止打卡
+  </view>
+    <view class="softHtp1">
+    supported by Bleach
+  </view>

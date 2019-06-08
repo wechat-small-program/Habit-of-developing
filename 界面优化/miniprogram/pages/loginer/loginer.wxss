@@ -1,0 +1,42 @@
+/* pages/loginer/loginer.wxss */
+page{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+.info{
+  color: red;
+}
+text{
+  color: #13227a;
+  font-size: 20px;
+}
+button{
+  margin-top: 440rpx;
+  margin-left:200rpx;
+  position: absolute;
+  left: 0;
+  color: white;
+  background-color:  #ffbc04;
+  right: 0;
+  font-size: 35px;
+  text-align: center;    
+  width: 140px;
+  height: 140px;      
+  border-radius: 250px;    
+}
+
+.back_img{
+  height: 100%;
+  background-size: contain;
+  width: 100%;
+  background-image: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1336687944,3674562065&fm=15&gp=0.jpg);
+}
+.gradient-text {  
+  font-size: 74rpx;  
+  font-weight: bold;  
+  background: linear-gradient(to right, #1ae8c8, #4a8aff);  
+  -webkit-background-clip: text;  
+  background-clip: text;  
+  color: transparent;
+}

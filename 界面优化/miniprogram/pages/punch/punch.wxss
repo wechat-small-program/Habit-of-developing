@@ -1,0 +1,130 @@
+/* pages/Calendar/Calendar.wxss */
+/* 打卡日历 */
+/*.all{
+ margin-top: 20rpx;
+}*/
+ 
+ .bar{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 30rpx 20rpx;
+ padding: 10rpx;
+}
+  .bar image{
+ width: 50rpx;
+ height: 50rpx;
+}
+ 
+ .week{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 20rpx;
+ padding-left: 40rpx;
+ padding-right: 40rpx;
+ margin: 20rpx;
+ border-radius: 10px;
+ background-color: rgb(255, 238, 7);
+}
+ 
+ .days{
+ margin: 20rpx;
+ padding: 10rpx;
+ border-radius: 10px;
+ background-color: rgb(255, 238, 7);
+ 
+}
+ 
+ .columns{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between; 
+}
+ 
+ .columns .rows{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+  .columns .rows .cell{
+ width: 84rpx;
+ height: 88rpx;
+ margin: 3rpx;
+ text-align: center;
+ border-radius: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+ 
+.count .daynumber{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+ 
+.count .daynumber .day{
+ margin-top: 50rpx;
+}
+ 
+.count{
+ margin: 20rpx;
+ padding: 30rpx;
+ display: flex;
+ text-align: center;
+ border-radius: 10px;
+ flex-direction: column;
+ justify-content: center;
+ background-color: rgb(255, 238, 7);
+ align-items: center;
+}
+ 
+.count .number{
+ color: red;
+ font-size: 60rpx;
+ background-color: rgb(255, 255, 255);
+ width: 100rpx;
+ height: 100rpx;
+ border-radius: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin: 20rpx;
+}
+ 
+.count text{
+ margin: 10rpx;
+}
+
+.circle{
+  
+    right: 35px;
+    bottom: 35px;         
+    width: 80px;
+    background-color: #d1c155;
+    height: 80px;
+    padding-top: 28px;
+    color: white;
+    background-size: cover;
+    position: fixed;
+    z-index: 9999;
+    font-size: 13px;
+    text-align: center;
+    border: 0 solid #ffffff;
+    border-radius: 500px;
+    box-shadow: 4px 1px 1px #cccccc;
+
+}
+/* .count.button{
+  color: red;
+  font-size: 60rpx;
+  background-color: rgb(244, 255, 96);
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20rpx;
+} */

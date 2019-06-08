@@ -1,0 +1,40 @@
+page {
+  position: relative;
+  background: rgb(255,255,255);
+  width: 100%;
+  height: 100%;
+}
+
+image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 12px;
+}
+
+
+
+text {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right:20px; 
+  color: #f0c710;
+}
+
+.softHtp {
+  margin-top: 200rpx;
+  text-align: center;
+  color:#f0c710;
+}
+
+
+.softHtp1 {
+  
+  margin-top: 400rpx;
+  text-align: center;
+  color:#f0c710;
+}
