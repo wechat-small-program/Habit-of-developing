@@ -1,0 +1,7 @@
+<view class="topBox">
+  <image src="../../static/images/csu.jpg" mode="aspectFill"></image>
+  <text>习惯养成</text>
+</view>
+  <view class="softHtp">
+    supported by Bleach
+  </view>

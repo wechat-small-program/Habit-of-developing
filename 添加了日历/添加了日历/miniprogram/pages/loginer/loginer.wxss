@@ -1,0 +1,32 @@
+/* pages/loginer/loginer.wxss */
+page{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+.info{
+  color: red;
+}
+text{
+  color: #13227a;
+  font-size: 20px;
+}
+button{
+  margin: auto;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: white;
+  background-color:  #13227a;
+  right: 0;
+  text-align: center;       
+  width: 40%;
+  height: 50px;      
+  border-radius: 20px;    
+}
+.back_img{
+  height: 100%;
+  background-size: contain;
+  width: 100%;
+  background-image: url(http://47.94.90.254:8000/11.jpg);
+}
