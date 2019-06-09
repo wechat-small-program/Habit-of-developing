@@ -1,0 +1,22 @@
+<view>
+<view class="title">积分商城</view>
+<view class='list'>
+  <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+
+  <view class="list_item">
+      <navigator url='./shop' bindtap='shop' id='{{item.goods_id}}'>
+      <view class='img'>
+        <image src="{{item.goods_img}}"  mode="aspectFit"/>
+      </view>
+      <view class='info'>
+        <view class='title'>{{item.goods_title}}</view>
+        <view class='price'>{{item.goods_price}}积分</view>
+        <view class='num'>商品详情：{{item.goods_details}}</view>
+    
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>
+</view>

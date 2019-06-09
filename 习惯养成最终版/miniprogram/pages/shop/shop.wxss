@@ -1,0 +1,138 @@
+/* pages/leftSwiperDel/index.wxss */
+page {
+  background: #fff;
+  padding: 0 80rpx 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3726574481,3561544774&fm=11&gp=0.jpg);
+  background-origin: border-box;
+  background-attachment: fixed;/*是否跟随滑动*/
+  padding-top: 0.1px;/*填充*/
+}
+view{
+    box-sizing: border-box;
+}
+.item-box{
+    width: 700rpx;
+    height: 10rpx;
+    margin: 0 auto;
+    padding:40rpx 0;
+}
+.title{
+  margin-top: 10px;
+  font-size: 20px;
+  height: 25px;
+  text-align: center;  
+  position: top;
+}
+.items{
+    width: 100%;
+}
+.item{
+    position: relative;
+    border-top: 2rpx solid #eee;
+    height: 120rpx;
+    line-height: 120rpx;
+    overflow: hidden;
+     
+}
+ 
+ 
+.item:last-child{
+    border-bottom: 2rpx solid #eee;
+}
+.inner{
+    position: absolute;
+    top:0;
+}
+.inner.txt{
+    background-color: #fff;
+    width: 100%;
+    z-index: 5;
+    padding:0 10rpx;
+    transition: left 0.2s ease-in-out;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.item-icon{
+    width: 64rpx;
+    height: 64rpx;
+    vertical-align: middle;
+    margin-right: 16rpx;
+    margin-left:13px;
+    border-radius:50%;
+ 
+}
+ 
+.item-data{
+  float: right;
+  margin-right:5%;}
+ 
+.rankpace{
+  color: rgb(0,139,0);
+}
+
+
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+navigator{
+  display:inline;
+}
+.list{
+  margin-top: 30px;
+}
+ 
+.list .list_item{
+  margin-top:10px;
+  padding:10px;
+  height:100px;
+  border-bottom:1px solid #E8E8E8;
+}
+.list .list_item .img{
+  float:left;
+  width:40%;
+  height:100%;
+}
+.list .list_item .img image{
+   width:100%;
+   height:100%;
+}
+ 
+.list .list_item .info{
+  width:59%;
+  float:right;
+  height:100px;
+  position:relative;
+}
+.list .list_item .info .title{
+  position: absolute;
+  left:10px;
+  bottom:80px;
+  color:#050505;
+  margin-left:20px;
+  font-size:15px;
+}
+ 
+.list .list_item .info .price{
+  position: absolute;
+  left:10px;
+  bottom:50px;
+  color:#e23434;
+  margin-left:20px;
+  font-size:15px;
+}
+ 
+.list .list_item .info .num{
+  position: absolute;
+  left:10px;
+  bottom:15px;
+  color:#747474;
+  margin-left:20px;
+  font-size:15px;
+}

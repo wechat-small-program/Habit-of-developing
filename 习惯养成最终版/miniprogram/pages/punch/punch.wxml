@@ -1,0 +1,60 @@
+<!-- 打卡日历页面 -->
+<modal id="modal" hidden="{{hiddenmodalput}}" title="清晨语录" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+<input type='text' bindinput='ina' name ="invitedname" placeholder="心情/计划/感受" focus="true"/>
+</modal>
+<view class='all'>
+ <view class="bar">
+  <!-- 上一个月 -->
+  <view class="previous" bindtap="handleCalendar" data-handle="prev">
+   <image src='../../static/images/pre.png'></image>
+  </view>
+  <!-- 显示年月 -->
+  <view class="date">{{cur_year}} 年 {{cur_month}} 月</view>
+  <!-- 下一个月 -->
+  <view class="next" bindtap="handleCalendar" data-handle="next">
+   <image src='../../static/images/next.png'></image>
+  </view>
+ </view>
+ <!-- 显示星期 -->
+ <view class="week">
+  <view wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+ </view>
+ <view class='days'>
+  <!-- 列 -->
+  <view class="columns" wx:for="{{days.length/7}}" wx:for-index="i" wx:key="i">
+   <view wx:for="{{days}}" wx:for-index="j" wx:key="j">
+    <!-- 行 -->
+    <view class="rows" wx:if="{{j/7 == i}}">
+     <view class="rows" wx:for="{{7}}" wx:for-index="k" wx:key="k">
+      <!-- 每个月份的空的单元格 -->
+      <view class='cell' wx:if="{{days[j+k].date == null}}">
+       <text decode="{{true}}">  </text>
+      </view>
+      <!-- 每个月份的有数字的单元格 -->
+      <view class='cell' wx:else>
+       <!-- 当前日期已签到 -->
+       <view bindtap='mood' style='{{days[j+k].color}}' class='cell' id="{{j+k}}">
+        <text>{{days[j+k].date}}</text>
+       </view>
+      </view>
+     </view>
+    </view>
+   </view>
+  </view>
+ </view>
+ <view hidden='{{mod_able}}' class='count' >
+ <text>{{my_mood}}</text>
+ </view>
+ <!-- 坚持打卡天数 -->
+ <view class='count'>
+  <text>截至目前，你当月已坚持打卡</text>
+  <view class='daynumber'>
+  <text class='number'>{{count}}</text>
+  <text class='day'>天</text>
+  </view>  
+  <text>请再接再厉，继续努力</text>
+ </view>
+</view>
+<button  class='count' bindtap="re_click" disabled='{{re_dis}}'>领取奖励</button>
+
+<button  class="circle" bindtap="btn_click" disabled='{{disabled}}'>{{do_what}}</button>
